@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    
+    <item 
+        
+        android:id="@+id/action_medications_discard"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_delete"
+        android:icon="@drawable/ic_action_discard"
+        
+        />
+     
+     <item 
+        
+        android:id="@+id/action_medications_save_cloud"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_save"
+        android:icon="@drawable/ic_action_cloud_upload"
+        
+        
+        />
+    
+    
+
+</menu>

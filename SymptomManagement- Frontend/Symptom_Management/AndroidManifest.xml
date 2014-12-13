@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.capstone"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+   
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <permission android:name= "com.android.capstone.permission.C2D_MESSAGE"
+                android:protectionLevel="signature" />
+    
+    <uses-permission android:name="com.android.capstone.permission.C2D_MESSAGE" />
+    
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme">
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        <activity
+            android:name="com.android.capstone.doctor.Doctor_VPatient_Activity"
+            android:parentActivityName="com.android.capstone.MainActivity" 
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        
+        
+       
+        
+         <activity
+            android:name="com.android.capstone.patient.CheckinNowActivity"
+            android:parentActivityName="com.android.capstone.patient.Patient_VDoctor_Activity" 
+            android:label="@string/label_checkin_now"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        
+         
+         <activity
+            android:name="com.android.capstone.doctor.DisplayCheckinActivity"
+            android:label="@string/label_checkin_logs"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+         </activity>
+         
+         
+        
+        <activity
+            android:name="com.android.capstone.patient.RemindersActivity"
+            android:parentActivityName="com.android.capstone.MainActivity" 
+            android:label="@string/label_reminders"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+         </activity>
+        
+        
+        
+        
+        
+        
+        <provider
+            android:authorities="@string/content_authority"
+            android:name="com.android.capstone.db.SymptomManagementProvider"
+            android:exported="false"/>
+      
+        
+        
+        
+        
+         <receiver
+            android:name="com.android.capstone.gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.android.capstone" />
+            </intent-filter>
+        </receiver>
+       
+         
+         
+         <receiver android:name="com.android.capstone.doctor.alarm.OnBootReceiver" >
+             <intent-filter>
+                   <action android:name="android.intent.action.BOOT_COMPLETED" />
+              </intent-filter>
+        </receiver>
+         
+         
+         
+         
+         
+         
+        <service android:name="com.android.capstone.gcm.GcmIntentService" />
+        <service android:name="com.android.capstone.doctor.alarm.CheckPainIntentService"/>  
+        <service android:name="com.android.capstone.doctor.alarm.CheckinAlarmService"/>     
+         
+        
+        
+        
+        
+        <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+        
+        
+    </application>
+
+</manifest>

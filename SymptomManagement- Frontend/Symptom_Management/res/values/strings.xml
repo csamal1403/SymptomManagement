@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Symptom Management</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_reminders">Settings</string>
+    
+    <string name="question_doctor">Are you a Doctor ?</string>
+    <string name="ans_yes">Yes</string>
+    <string name="ans_no">No</string>
+    
+    <string name="isDoctor">Doctor</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="UserName">  Name  </string>
+    <string name="action_addPatient">Add</string>
+    <string name="emailId">Email Id</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_save">Save</string>
+    
+    <string name="label_checkin_logs">Checkin Logs</string>
+    <string name="label_reminders">Reminders</string>
+    <string name="label_checkin_now">Checkin Now</string>
+    
+    <string name="next">Next</string>
+    <string name="prev">Previous</string>
+    <string name="finish">Submit CheckIn</string>
+    <string name="review">Review</string>
+
+    <string name="label_your_name">Name</string>
+    <string name="label_your_email">Email</string>
+    <string name="hint_your_name">e.g. Lorem Ipsum</string>
+    <string name="hint_your_email">Optional</string>
+    <string name="user_image">User Image</string>
+    
+    <string name="submit_confirm_message"> Submit your Check-In Data to Doctor ? </string>
+    <string name="submit_confirm_button"> Yes </string>
+   
+    
+    <string name="content_authority">com.android.capstone</string>
+    
+    
+
+</resources>
