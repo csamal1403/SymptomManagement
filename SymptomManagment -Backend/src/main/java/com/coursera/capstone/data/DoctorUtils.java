@@ -10,7 +10,7 @@ import javax.jdo.PersistenceManager;
 public class DoctorUtils {
 
 	
-	private static final String API_KEY = "AIzaSyBQrNoa9uiJ2VlXrC5oxuejPZcXgmzhTl8";
+	private static final String API_KEY = xxxxxxxxxxxxxxxxxxx;//Get your Own API Key...
 	
 	
     private PersistenceManager pm ;
