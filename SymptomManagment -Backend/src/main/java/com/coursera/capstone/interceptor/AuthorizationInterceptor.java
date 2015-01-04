@@ -18,7 +18,7 @@ import com.coursera.capstone.data.Token;
 public class AuthorizationInterceptor extends HandlerInterceptorAdapter {
 
 	private final String TOKEN_ENDPOINT = "https://www.googleapis.com";
-	public static final String CLIENT_ID_ANDROID = "992384145132-mbvd13690rr56vu15iugq1npbd4kkkmi.apps.googleusercontent.com";
+	public static final String CLIENT_ID_ANDROID = xxxxxxxxxxxxxxxxxxxxxxxx;//Get your Own CLIENT_ID of ANDROID..
 	public static final String AUTH_HEADER = "Authorization";
 	
 	
