@@ -13,7 +13,7 @@ import javax.jdo.PersistenceManager;
 
 public class PatientUtils {
 
-	private static final String API_KEY = "AIzaSyBQrNoa9uiJ2VlXrC5oxuejPZcXgmzhTl8";
+	private static final String API_KEY = xxxxxxxxxxxxxxxx;//Get your Own API Key...
 	
     private PersistenceManager pm ;
     private CheckinUtils utils;
